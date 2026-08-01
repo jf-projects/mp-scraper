@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{{title}}</title>
+
+    <!-- <link
+        rel="stylesheet"
+        href="./templates/flyer.css"
+    /> -->
+    <!-- <link rel="stylesheet" href="/templates/flyer.css"> -->
+</head>
+
+<body>
+
+    <div class="flyer">
+
+        <!-- ==========================
+             HEADER
+        =========================== -->
+
+        <header class="header">
+
+            <div class="branding">
+
+                <img src="{{logo}}" class="logo" alt="Company Logo" />
+
+                <div>
+
+                    <h3>CLOSED BY CARLA</h3>
+
+                    <p>Real Estate Professional</p>
+
+                </div>
+
+            </div>
+
+            <div class="badge">
+                FOR SALE
+            </div>
+
+        </header>
+
+        <!-- ==========================
+             HERO
+        =========================== -->
+
+        <section class="hero">
+
+            <div class="hero-left">
+
+                <h1>
+                    {{title}}
+                </h1>
+
+                <p class="location">
+                    📍 {{location}}
+                </p>
+
+                <div class="divider"></div>
+
+                <span class="price-label">
+                    OFFERED AT
+                </span>
+
+                <h2 class="price">
+                    {{price}}
+                </h2>
+
+                <p class="tagline">
+                    {{tagline}}
+                </p>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="{{heroImage}}" alt="{{title}}" />
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             IMAGE GALLERY
+        =========================== -->
+
+        <section class="gallery">
+
+            <img src="{{image1}}" alt="">
+            <img src="{{image2}}" alt="">
+            <img src="{{image3}}" alt="">
+            <img src="{{image4}}" alt="">
+
+        </section>
+
+        <!-- ==========================
+             PROPERTY SPECS
+        =========================== -->
+
+        <section class="specs">
+
+            <div class="spec">
+
+                <span class="value">
+                    {{bedrooms}}
+                </span>
+
+                <span class="label">
+                    Bedrooms
+                </span>
+
+            </div>
+
+            <div class="spec">
+
+                <span class="value">
+                    {{bathrooms}}
+                </span>
+
+                <span class="label">
+                    Bathrooms
+                </span>
+
+            </div>
+
+            <div class="spec">
+
+                <span class="value">
+                    {{parking}}
+                </span>
+
+                <span class="label">
+                    Carport
+                </span>
+
+            </div>
+
+            <div class="spec">
+
+                <span class="value">
+                    {{lotArea}}
+                </span>
+
+                <span class="label">
+                    Lot Area
+                </span>
+
+            </div>
+
+            <div class="spec">
+
+                <span class="value">
+                    {{floorArea}}
+                </span>
+
+                <span class="label">
+                    Floor Area
+                </span>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             DETAILS
+        =========================== -->
+
+        <section class="details">
+
+            <div class="description">
+
+                <h3>
+                    PROPERTY DESCRIPTION
+                </h3>
+
+                <p>
+                    {{description}}
+                </p>
+
+            </div>
+
+            <div class="amenities">
+
+                <h3>
+                    PROPERTY FEATURES
+                </h3>
+
+                <ul>
+
+                    {{amenities}}
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             AGENT INFORMATION
+        =========================== -->
+
+        <footer class="footer">
+
+            <div class="agent">
+
+                <img src="{{agentPhoto}}" class="agent-logo" alt="{{agent}}" />
+
+                <div>
+
+                    <small>
+                        Your Trusted Real Estate Professional
+                    </small>
+
+                    <h2>
+                        {{agent}}
+                    </h2>
+
+                    <p>
+                        {{position}}
+                    </p>
+
+                    <p>
+                        📞 {{phone}}
+                    </p>
+
+                    <p>
+                        ✉ {{email}}
+                    </p>
+
+                    <p>
+                        🌐 {{website}}
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="qr">
+
+                <h3>
+                    Scan to View Online
+                </h3>
+
+                <p>
+                    Complete property details
+                </p>
+
+                <img src="{{qrCode}}" alt="QR Code" />
+
+            </div>
+
+        </footer>
+
+        <!-- ==========================
+             DISCLAIMER
+        =========================== -->
+
+        <div class="disclaimer">
+
+            All information contained herein is believed to be accurate but is not guaranteed.
+            Availability, prices, and specifications are subject to change without prior notice.
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
