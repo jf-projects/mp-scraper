@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: m-scraper
+    runtime: node
+    plan: free
+
+    buildCommand: |
+      npm install
+      npx playwright install chromium
+
+    startCommand: npm start
