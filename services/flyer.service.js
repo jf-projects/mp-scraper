@@ -3,6 +3,8 @@ import { PDFDocument } from "pdf-lib";
 
 export async function generateFlyer(html) {
 
+    console.log("Launching Chromium...");
+
     const browser = await chromium.launch({
         headless: true,
         args: [
@@ -11,6 +13,8 @@ export async function generateFlyer(html) {
             "--disable-dev-shm-usage"
         ]
     });
+
+    console.log("Chromium launched successfully.");
 
     // Render at high resolution (A4 @ 300 DPI)
     const page = await browser.newPage({
