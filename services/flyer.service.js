@@ -4,7 +4,12 @@ import { PDFDocument } from "pdf-lib";
 export async function generateFlyer(html) {
 
     const browser = await chromium.launch({
-        headless: true
+        headless: true,
+        args: [
+            "--no-sandbox",
+            "--disable-setuid-sandbox",
+            "--disable-dev-shm-usage"
+        ]
     });
 
     // Render at high resolution (A4 @ 300 DPI)
